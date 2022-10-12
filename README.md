@@ -1,3 +1,3 @@
 # curso em video
-theme: minima
+# theme: minima
 Esse é o meu primeiro repositório
