@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800&display=swap');
+
+@media (prefers-reduced-motion: no-preference) {
+* {
+    scroll-behavior: smooth;
+}}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    padding: 20px 10px;
+}
+
+main {
+    max-width: 1500px;
+    min-width: 300px;
+    margin: auto;
+    background-color: #EEEEEE;
+}
+
+figure {
+    background-color: white;
+    width: 90%;
+    padding: 10px;
+    margin: auto;
+
+}
+
+figure img {
+    width: 90%;
+    display: block;
+    margin: auto;
+}
