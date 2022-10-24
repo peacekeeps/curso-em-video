@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Website Clone do Quiz de Acessibilidade do FreeCodeCamp"> <!-- Essa descrição é usada pelos buscadores para descrever seu site -->
+    <link rel="stylesheet" href="styles.css">
+    <title>Acessibily Quiz</title>
+</head>
+
+<body>
+<header>
+	<img src="logo.svg" alt="freeCodeCamp" id="fcclogo"> <!-- Imagens do tipo .svg são boas como logotipos, pois podem ser redimensionadas sem perder qualidade -->
+
+	<h1>HTML / CSS Quiz</h1>
+
+	<nav>
+		<a href="#student-info">INFO</a>
+		<a href="#html-questions">HTML</a>
+		<a href="#css-questions">CSS</a>
+	</nav>
+	
+</header>
+
+<main>
+
+	<form method="post" action="https://freecodecamp.org/practice-project/acessibility-quiz"> <!-- Existem dois tipos de metodos para formulários, esse é mais apropriado para informações mais importantes -->
+	
+	<section aria-labelledby="student-info" class="info-container">
+	
+	<h2 id="student-info">Student's Info</h2> 
+	<hr>
+	<!-- 
+
+Seção de informações:
+- display block 
+- dob com texto oculto, colocar ::after para formato ddmmaa
+
+--><fieldset>
+
+	<div class="info-div">
+		
+		<label class="info-label" for="info-name" name="name">Name: </label> 
+
+		<input  id="info-name" name="name" type="text" placeholder="Name and last name here..." class="info-input" required>
+	
+	</div>
+
+	<div class="info-div">
+		<label for="info-email" name="email" class="info-label">E-mail: </label>
+		
+		<input id="info-email" name="email" type="email" placeholder="example@example.com" class="info-input" required>
+	</div>
+
+	<div class="info-div">
+		<label for="info-dob" name="date-of-birth" id="label-dob" class="info-label">DOB: <span class="sr-only">Date of Birth</span></span></label>
+		
+		<input id="info-dob" name="date-of-birth" type="date" class="info-input" required>
+	</div>
+
+</fieldset>
+</section>
+
+<section aria-labelledby="html-questions" class="html-container">
+
+<h2 id="html-questions">HTML</h2>
+<hr>
+
+<fieldset class="quest-field" id="quest-field002">
+
+	<legend>Question #1</legend>
+	<p>"The legend element represents a caption for the content of its parent fieldset element".</p>
+
+	<p>This affirmation is:</p>
+	
+	<label for="q1-true" name="question1" class="quest-label"><input id="q1-true" name="question1" type="radio" value="true" required> True</label>
+	
+	<label for="q1-false" name="question1" class="quest-label"><input id="q1-false" name="question1" type="radio" value="false" required> False</label>
+	
+</fieldset>
+
+<fieldset class="quest-field" id="quest-field001">
+
+	<legend>Question #2</legend>
+	<p>"A label element nesting an input element is required to have a for attribute with the same value as the input's id"</p>
+	
+	<p>This affirmation is:</p>
+	
+	<label for="q2-true" name="question2" class="quest-label"><input id="q2-true" name="question2" type="radio" value="true" required> True</label>
+	<!-- example
+	<label for="" name=""><input id="" name="" type=""></label>
+	-->
+		<label for="q2-false" name="question2" class="quest-label"><input id="q2-false" name="question2" type="radio" value="false" required> False</label>
+		
+</fieldset>
+</section>
+
+
+<section aria-labelledby="css-questions" class="css-container">
+
+<h2 id="css-questions">CSS</h2>
+<hr>
+	
+<fieldset> <!-- menu select-->
+
+		<label for="css-drop" name="css-question" class="css-drop-label">Are you a front-end developer?</label>
+		
+		<select id="css-drop" class="css-drop" required>
+			<option selected disabled value="">Select an option</option>
+			
+			<option value="yes">Yes</option>
+			
+			<option value="no">No</option>
+		</select>
+		
+</fieldset>
+	
+	<fieldset class="text" id="text001"> <!-- caixa de texto -->
+		<label for="text-bx001" name="text-bx001" class="text-bx-label">Do you have any suggestions? </label>
+		<textarea  rows="5" cols="40" class="text-bx" id="text-bx001" name="text-bx001" placeholder="Who is CSS..." required></textarea>
+		
+	</fieldset>
+
+</section>
+
+	<fieldset> <!-- submit -->
+	
+		<button type="submit" accesskey="s">Submit</button>
+		
+	</fieldset>
+	
+</form>
+</main>
+<footer>
+	<adress>
+		<p>freeCodeCamp</p>
+		<p>San Francisco</p>
+		<p>California</p>
+		<p>USA</p>
+	</adress>
+</footer>
+</body>
+</html>
