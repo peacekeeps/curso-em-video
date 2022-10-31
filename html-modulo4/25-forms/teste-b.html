@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h1>Teste de Formulário</h1>
+    <!-- <form action="cadastro.php">
+        <p>
+            <label for="nome">Nome</label>
+            <input type="text" name="nome" id="nome" required maxlenght="30" placeholder="Seu nome" autocomplete="name">
+        </p>
+        <p>
+            <label for="media">Média</label>
+            <input type="number" name="media" id="media" min="0" max="10" step="0.5">
+        </p>
+        <p>
+            <label for="mes">Período Letivo</label>
+            <input type="month" name="mes" id="mes">
+        </p>
+        <p>
+            <label for="teste">Teste</label>
+            <input type="password" name="teste" id="teste" pattern="[a-z0-5]{8,}">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form> -->
+    <form action="cadastro.php">
+        <label for="teste">Teste</label>
+        <input type="password" name="teste" id="teste" pattern="[a-z0-9]{8,}" required>
+        <input type="submit" value="Submit">    
+    </form>
+</body>
+</html>
