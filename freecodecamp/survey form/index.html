@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+        <header>
+            <h1 id="title">freeCodeCamp Survey Form</h1>
+            <p id="description">Thank you for taking the time to help us improve the platform</p>
+        </header>
+<div>
+    <form action="" id="survey-form">
+
+    <div class="form-group1">
+
+    <label for="name" id="name-label" class="personal-label">Name <input type="text" id="name" placeholder="Enter your name" required class="personal-type"></label>
+
+    <label for="email" id="email-label" class="personal-label">Email <input type="email" id="email" required placeholder="Enter your Email" class="personal-type" ></label>
+
+    <label for="age" id="number-label" class="personal-label">Age (optional) <input type="number" name="age" id="number" pattern="[0-9]" min="10" max="99" placeholder="Age" class="personal-type"></label>
+
+    </div>
+    <div>
+        <p>Which option best describes your current role?</p>
+        <select name="dropdown" id="dropdown" placeholder="Select current role">
+
+            <option disabled selected value="0">
+                Select currrent role
+            </option>
+
+            <option value="1">
+                Student
+            </option>
+
+            <option value="2">
+                Full Time Job
+            </option>
+
+            <option value="3">
+                Full Time Learner
+            </option>
+
+            <option value="4">
+                Prefer not to say
+            </option>
+
+            <option value="5">
+                Other
+            </option>
+
+        </select>
+  
+        <p class="radio-p">Would you recommend freeCodeCamp to a friend?</p>
+        
+        <label for="definetely" class="radio-label"><input type="radio" name="recommend" id="definitely" value="definitely" checked class="radio-type"> Definitely</label>
+       
+        <label for="maybe" class="radio-label"><input type="radio" name="recommend" id="maybe" value="maybe" class="radio-type"> Maybe</label>
+        
+        <label for="no" class="radio-label"><input type="radio" name="recommend" id="no" value="no" class="radio-type"> Not sure</label>
+
+    </fieldset>
+
+    <fieldset>
+        <p class="check-p">What would you like to see improved?</p>
+        <label for="front" class="check-label"><input type="checkbox" name="suggestion" id="front" value="front" class="check-input"> Front-end Projects</label>
+
+        <label for="back" class="check-label"><input type="checkbox" name="suggestion" id="back" value="back" class="check-input"> Back-end Projects</label>
+
+        <label for="data" class="check-label"><input type="checkbox" name="suggestion" id="data" value="data" class="check-input"> Data Visualization</label>
+
+        <label for="challenges" class="check-label"><input type="checkbox" name="suggestion" id="challenges" value="challenges" class="check-input"> Challenges</label>
+
+        <label for="open" class="check-label"><input type="checkbox" name="suggestion" class="check-input" id="open" value="open" class="check-input"> Open Source Community</label>
+
+        <label for="videos" class="check-label"><input type="checkbox" name="suggestion" id="videos" value="videos" class="check-input"> Videos</label>
+
+        <label for="city" class="check-label"><input type="checkbox" name="suggestion" id="city" value="city" class="check-input"> City Meetups</label>
+
+        <label for="wiki" class="check-label"><input type="checkbox" name="suggestion" id="wiki" value="wiki" class="check-input"> Wiki</label>
+
+        <label for="forum" class="check-label"><input type="checkbox" name="suggestion" id="forum" value="forum" class="check-input"> Forum</label>
+
+        <label for="courses" class="check-label"><input type="checkbox" name="suggestion" id="courses" value="courses" class="check-input"> Additional Courses</label>
+    </fieldset>
+
+    <fieldset>
+        <p class="text-p">Any comments or suggestions?</p>
+        <textarea name="textbox" id="textbox" cols="30" rows="10" placeholder="Enter your comment here"></textarea>
+    </fieldset>
+
+    <input type="submit" id="submit" value="Submit" class="submit">
+    </form>
+    </div>
+</body>
+</html>
