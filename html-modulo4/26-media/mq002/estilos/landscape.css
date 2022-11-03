@@ -1,1 +1,6 @@
 @charset "UTF-8"; /* Define o conjunto de caracteres suportado por esse documento */
+
+body {
+    background-image: url('../imagens/cev-landscape.jpg');
+    background-position: left bottom;
+}
