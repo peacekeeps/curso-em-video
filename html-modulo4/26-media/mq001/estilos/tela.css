@@ -13,7 +13,7 @@ html {
 }
 
 header {
-    background-color: rgb(158, 158, 158);
+    background-color: rgba(158, 158, 158) #ffffff00;
 }
 
 header h1 {
