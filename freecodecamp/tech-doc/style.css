@@ -1,4 +1,37 @@
-@charsety "UTF-8";
+@charset "UTF-8";
+
+@media screen and (min-width:900px) {
+    header {
+        display: flex;
+        flex-direction: row;
+        width: 300px;
+        top: 0;
+        left: 0;
+        border-right: 1px solid black;
+        height: 100vh;
+        position:fixed;
+    }
+
+    nav h1 {
+        display: block;
+        margin: 10px;
+        font-size: 1em;
+    }
+
+    nav ul {
+        height: 120%;
+        overflow:visible;
+        display: block;
+    }
+
+    nav li {
+        overflow:visible;
+    }
+    
+    main {
+        margin-left: 300px;
+    }
+}
 
 * {
     box-sizing: border-box;
@@ -9,19 +42,25 @@ html, body {
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.1em;
+    line-height: 1.5;
+}
+
+body {
+    padding-bottom: 5em;
 }
 
 header h1 {
+    font-size: 1.7em;
     text-align: center;
 }
 
 nav ul {
-    width: 100%;
+    width: 100%; /* 100vw some com o scroll */
     height: 250px;
-    padding: 0;
-    border: 1px solid black;
+    padding: 0; /* Tira o padding padrão das listas */
+    border: 3px solid rgba(0, 0, 0, 0.613);
     overflow-y: scroll;
-    overflow-x: hidden;
+    overflow-x: hidden; /* Especifiquei os dois porque o scroll lateral não queria sumir, daí dei um hidden */
 }
 
 nav li {
@@ -31,13 +70,15 @@ nav li {
     width: 100%;
     margin: 0;
     padding: 15px 30px;
-    border: 0.1em solid rgb(0, 0, 0);
+    border-bottom: 0.1em solid rgb(0, 0, 0);
 }
 
 /* Conteúdo */
 section { 
     /* Centralizando o conteúdo */
     width: 90%;
+    max-width: 800px;
+    min-width: 250px;
     margin: auto;
 }
 
@@ -47,7 +88,51 @@ h1, h2 {
     color:rgba(0, 0, 0, 0.876);
 }
 
+/* Valores de referência para textos:
+    padding-left: 10px;
+    color: #0f0f0fd6;
+    margin: 2em 0; - Para articles
+*/
+
+article {
+    margin: 2em 0;
+}
+
 article p {
     color: #0f0f0fd6;
     padding-left: 10px;
+}
+
+article code {
+    display: block;
+    width: 95%;
+    padding: 20px 15px;
+    line-height: 2;
+    margin: auto;
+    border-radius: 10px;
+    background-color: #f1f1f1;
+    color: #0f0f0fbb;
+}
+
+article ul {
+    padding-left: 4em;
+}
+
+article li {
+    margin: .5em 0;
+    color: #0f0f0fd6;
+}
+
+footer {
+    width: 90%;
+    margin: auto;
+}
+
+footer ul {
+    padding-left: 4em;
+}
+
+footer li {
+    margin: .5em 0;
+    color: #0f0f0fd6;
 }
