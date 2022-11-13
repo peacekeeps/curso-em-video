@@ -1,31 +1,34 @@
 @charset "UTF-8";
-
-@media screen and (min-width:900px) {
-    header {
-        display: flex;
-        flex-direction: row;
-        width: 300px;
-        top: 0;
-        left: 0;
-        border-right: 1px solid black;
-        height: 100vh;
-        position:fixed;
+@media only screen and (min-width:900px) {
+    body nav {
+    position: fixed;
+    min-width: 290px;
+    top: 0px;
+    left: 0px;
+    width: 300px;
+    height: 100%;
+    border-right: solid;
+    border-color: rgba(0, 22, 22, 0.4);
     }
 
-    nav h1 {
-        display: block;
-        margin: 10px;
-        font-size: 1em;
+    body nav header {
+        text-align: center;
+        font-size: 1.3em;
+        padding: .5em;
     }
 
-    nav ul {
-        height: 120%;
-        overflow:visible;
-        display: block;
+    body nav ul {
+        height: 100%;
+        margin-top: 0;
+        overflow-y: auto;
+        overflow-x: hidden;
+        border: none;
+        border-top: 1px solid black;
     }
 
-    nav li {
-        overflow:visible;
+    body nav ul li {
+        font-size: .8em;
+        padding: 10px 30px;
     }
     
     main {
@@ -49,9 +52,13 @@ body {
     padding-bottom: 5em;
 }
 
-header h1 {
+nav header {
     font-size: 1.7em;
     text-align: center;
+}
+
+section header {
+    font-size: 1.7em;
 }
 
 nav ul {
@@ -69,12 +76,12 @@ nav li {
     list-style-type: none;
     width: 100%;
     margin: 0;
-    padding: 15px 30px;
+    padding: 10px 30px;
     border-bottom: 0.1em solid rgb(0, 0, 0);
 }
 
 /* Conteúdo */
-section { 
+.container { 
     /* Centralizando o conteúdo */
     width: 90%;
     max-width: 800px;
@@ -82,7 +89,7 @@ section {
     margin: auto;
 }
 
-h1, h2 {
+header {
     font-weight: 600;
     letter-spacing: 1px;
     color:rgba(0, 0, 0, 0.876);
@@ -94,16 +101,16 @@ h1, h2 {
     margin: 2em 0; - Para articles
 */
 
-article {
+.main-section {
     margin: 2em 0;
 }
 
-article p {
+.main-section p {
     color: #0f0f0fd6;
     padding-left: 10px;
 }
 
-article code {
+.main-section code {
     display: block;
     width: 95%;
     padding: 20px 15px;
@@ -114,11 +121,11 @@ article code {
     color: #0f0f0fbb;
 }
 
-article ul {
+.main-section ul {
     padding-left: 4em;
 }
 
-article li {
+.main-section li {
     margin: .5em 0;
     color: #0f0f0fd6;
 }

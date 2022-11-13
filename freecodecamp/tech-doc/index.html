@@ -5,34 +5,60 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Javascript Documentation</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header>
-      <nav>
-        <h1>JS Documentation</h1>
+    <main id="main-doc">
+      <nav id="navbar">
+        <header>JS Documentation</header>
         <ul>
-          <li>Introduction</li>
-          <li>What you should already know</li>
-          <li>JavaScript and Java</li>
-          <li>Hello world</li>
-          <li>Variables</li>
-          <li>Declaring variables</li>
-          <li>Variable scope</li>
-          <li>Global variables</li>
-          <li>Constants</li>
-          <li>Data types</li>
-          <li>if...else statement</li>
-          <li>while statement</li>
-          <li>Function declarations</li>
-          <li>Reference</li>
+          <a href="#Introduction">
+            <li>Introduction</li>
+          </a>
+          <a href="#What_you_should_already_know">
+            <li>What you should already know</li>
+          </a>
+          <a href="#JavaScript_and_Java">
+            <li>JavaScript and Java</li>
+          </a>
+          <a href="#Hello_world">
+            <li>Hello world</li>
+          </a>
+          <a href="#Variables">
+            <li>Variables</li>
+          </a>
+          <a href="#Declaring_variables">
+            <li>Declaring variables</li>
+          </a>
+          <a href="#Variable_scope">
+            <li>Variable scope</li>
+          </a>
+          <a href="#Global_variables">
+            <li>Global variables</li>
+          </a>
+          <a href="#Constants">
+            <li>Constants</li>
+          </a>
+          <a href="#Data_types">
+            <li>Data types</li>
+          </a>
+          <a href="#if...else_statement">
+            <li>if...else statement</li>
+          </a>
+          <a href="#while_statement">
+            <li>while statement</li>
+          </a>
+          <a href="#Function_declarations">
+            <li>Function declarations</li>
+          </a>
+          <a href="#Reference">
+            <li>Reference</li>
+          </a>
         </ul>
       </nav>
-    </header>
-    <main>
-      <section>
-        <article>
-          <h2>Introduction</h2>
+      <section class="container">
+        <section class="main-section" id="Introduction">
+          <header>Introduction</header>
           <p>
             JavaScript is a cross-platform, object-oriented scripting language.
             It is a small and lightweight language. Inside a host environment
@@ -64,9 +90,9 @@
               server.
             </li>
           </ul>
-        </article>
-        <article>
-          <h2>What you should already know</h2>
+        </section>
+        <section class="main-section" id="What_you_should_already_know">
+          <header>What you should already know</header>
           <p>This guide assumes you have the following basic background:</p>
           <ul>
             <li>
@@ -79,9 +105,9 @@
               one of the tutorials linked on the main page about JavaScript.
             </li>
           </ul>
-        </article>
-        <article>
-          <h2>JavaScript and Java</h2>
+        </section>
+        <section class="main-section" id="JavaScript_and_Java">
+          <header>JavaScript and Java</header>
           <p>
             JavaScript and Java are similar in some ways but fundamentally
             different in some others. The JavaScript language resembles Java but
@@ -108,9 +134,9 @@
             protected, and you do not have to implement interfaces. Variables,
             parameters, and function return types are not explicitly typed.
           </p>
-        </article>
-        <article>
-          <h2>Hello world</h2>
+        </section>
+        <section class="main-section" id="Hello_world">
+          <header>Hello world</header>
           <p>
             To get started with writing JavaScript, open the Scratchpad and
             write your first "Hello world" JavaScript code:
@@ -123,9 +149,9 @@
             Select the code in the pad and hit Ctrl+R to watch it unfold in your
             browser!
           </p>
-        </article>
-        <article>
-          <h2>Variables</h2>
+        </section>
+        <section class="main-section" id="Variables">
+          <header>Variables</header>
           <p>
             You use variables as symbolic names for values in your application.
             The names of variables, called identifiers, conform to certain
@@ -144,9 +170,9 @@
             characters in identifiers. Some examples of legal names are
             Number_hits, temp99, and _name.
           </p>
-        </article>
-        <article>
-          <h2>Declaring variables</h2>
+        </section>
+        <section class="main-section" id="Declaring_variables">
+          <header>Declaring variables</header>
           <p>
             You can declare a variable in three ways: With the keyword var. For
             example,
@@ -167,9 +193,9 @@
             This syntax can be used to declare a block scope local variable. See
             Variable scope below.
           </p>
-        </article>
-        <article>
-          <h2>Variable scope</h2>
+        </section>
+        <section class="main-section" id="Variable_scope">
+          <header>Variable scope</header>
           <p>
             When you declare a variable outside of any function, it is called a
             global variable, because it is available to any other code in the
@@ -194,9 +220,9 @@
             if (true) { let y = 5; } console.log(y); // ReferenceError: y is not
             defined
           </code>
-        </article>
-        <article>
-          <h2>Global variables</h2>
+        </section>
+        <section class="main-section" id="Global_variables">
+          <header>Global variables</header>
           <p>
             Global variables are in fact properties of the global object. In web
             pages the global object is window, so you can set and access global
@@ -209,9 +235,9 @@
             declared in a document, you can refer to this variable from an
             iframe as parent.phoneNumber.
           </p>
-        </article>
-        <article>
-          <h2>Constants</h2>
+        </section>
+        <section class="main-section" id="Constants">
+          <header>Constants</header>
           <p>
             You can create a read-only, named constant with the const keyword.
             The syntax of a constant identifier is the same as for a variable
@@ -244,9 +270,9 @@
           <code>
             const MY_OBJECT = {"key": "value"}; MY_OBJECT.key = "otherValue";
           </code>
-        </article>
-        <article>
-          <h2>Data types</h2>
+        </section>
+        <section class="main-section" id="Data_types">
+          <header>Data types</header>
           <p>The latest ECMAScript standard defines seven data types:</p>
           <ul>
             <li>
@@ -278,7 +304,7 @@
             can think of objects as named containers for values, and functions
             as procedures that your application can perform.
           </p>
-          <h2>if...else statement</h2>
+          <header>if...else statement</header>
           <p>
             Use the if statement to execute a statement if a logical condition
             is true. Use the optional else clause to execute a statement if the
@@ -327,9 +353,9 @@
             assignment. For example:
           </p>
           <code> if ((x = y)) { /* statements here */ } </code>
-        </article>
-        <article>
-          <h2>while statement</h2>
+        </section>
+        <section class="main-section" id="while_statement">
+          <header>while statement</header>
           <p></p>
           <p>
             A while statement executes its statements as long as a specified
@@ -368,9 +394,9 @@
             After completing the third pass, the condition n < 3 is no longer
             true, so the loop terminates.
           </p>
-        </article>
-        <article>
-          <h2>Function declarations</h2>
+        </section>
+        <section class="main-section" id="Function_declarations">
+          <header>Function declarations</header>
           <p></p>
           <p>
             A function definition (also called a function declaration, or
@@ -405,10 +431,10 @@
             changes the value of the parameter, this change is not reflected
             globally or in the calling function.
           </p>
-        </article>
+        </section>
       </section>
       <footer>
-        <h2>Reference</h2>
+        <header>Reference</header>
         <ul>
           <li>All the documentation in this page is taken from MDN.</li>
         </ul>
