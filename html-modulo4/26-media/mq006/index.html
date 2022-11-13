@@ -1,42 +1,73 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Media Querie</title>
-    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet" />
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaquery.css" />
+  </head>
+
+  <body onrezise="changeSize()">
     <header>
-        <h1>Meu Site</h1>
-        <menu >
-            <i class="material-icons" onclick="clickMenu()">menu</i>
-            <ul id="menu">
-                <li><a href="#">Exemplo A</a></li>
-                <li><a href="#">Exemplo B</a></li>
-                <li><a href="#">Exemplo C</a></li>
-                <li><a href="#">Exemplo D</a></li>
-                <li><a href="#">Exemplo E</a></li>
-            </ul>
-        </menu>
+      <h1>Meu Site</h1>
+
+      <menu id="menu-container">
+        <i id="burger" class="material-icons" onclick="clickMenu()">menu</i>
+
+        <ul id="menu">
+          <li><a href="#">Exemplo A</a></li>
+          <li><a href="#">Exemplo B</a></li>
+          <li><a href="#">Exemplo C</a></li>
+          <li><a href="#">Exemplo D</a></li>
+          <li><a href="#">Exemplo E</a></li>
+        </ul>
+      </menu>
     </header>
     <main>
-        <article>
-            <h2>Lorem Ipsum</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio saepe maxime dolores rem debitis labore esse delectus tenetur autem tempore ipsa, ad quis iusto enim ipsam sapiente, necessitatibus minus reprehenderit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Est alias impedit voluptates accusamus fugiat quam asperiores, ea similique, delectus deleniti omnis eos quo sint labore! Eius autem quae quis totam.</p>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum, quos ipsam repudiandae tempora dicta consequuntur saepe atque ex. Illum expedita error repudiandae quasi sunt accusantium inventore itaque omnis, mollitia aliquid! Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid pariatur eveniet, voluptas repudiandae qui quisquam assumenda nam saepe, cum ipsam magnam. Reiciendis enim aliquam molestias ratione architecto laudantium cumque itaque?</p>
-        </article>
+      <article>
+        <h2>Lorem Ipsum</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+          saepe maxime dolores rem debitis labore esse delectus tenetur autem
+          tempore ipsa, ad quis iusto enim ipsam sapiente, necessitatibus minus
+          reprehenderit. Lorem ipsum dolor sit amet consectetur adipisicing
+          elit. Est alias impedit voluptates accusamus fugiat quam asperiores,
+          ea similique, delectus deleniti omnis eos quo sint labore! Eius autem
+          quae quis totam.
+        </p>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum, quos
+          ipsam repudiandae tempora dicta consequuntur saepe atque ex. Illum
+          expedita error repudiandae quasi sunt accusantium inventore itaque
+          omnis, mollitia aliquid! Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Aliquid pariatur eveniet, voluptas repudiandae qui
+          quisquam assumenda nam saepe, cum ipsam magnam. Reiciendis enim
+          aliquam molestias ratione architecto laudantium cumque itaque?
+        </p>
+      </article>
     </main>
     <script>
-        function clickMenu() {
-            if (menu.style.display == 'block') {
-                menu.style.display = 'none'
-            } else {
-                menu.style.display = 'block'
-            }
+      function changeSize() {
+        if (window.innerWidth >= 768) {
+          menu.style.display = 'block'
+        } else {
+          menu.style.display = 'none'
         }
+      }
+
+      function clickMenu() {
+        if (menu.style.display == 'block') {
+          menu.style.display = 'none'
+        } else {
+          menu.style.display = 'block'
+        }
+      }
     </script>
-</body>
+  </body>
 </html>
