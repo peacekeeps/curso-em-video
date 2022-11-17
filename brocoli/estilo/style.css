@@ -13,6 +13,8 @@ mc-only {
 body {
     background: url('../imagens/fundo.jpg') center center fixed no-repeat;
     background-size: cover;
+    min-width: 280px;
+    overflow: hidden;
 }
 
 main {
@@ -33,6 +35,7 @@ div.div-brocoli {
     border-radius: 50%;
     align-items: center;
     justify-content: center;
+    transition: .3s;
 }
 
 div.div-brocoli:after {
@@ -45,6 +48,7 @@ div.div-brocoli:after {
     left: 50%;
     transform: translateX(-50%);
     border-radius: 50%;
+    transition: .3s;
 }
 
 img {
@@ -66,6 +70,7 @@ section#container-a {
   margin: 150px auto 0 auto;
   box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.514);
   border-radius: 20px;
+  transition: border-radius .5s;
 }
 
 fieldset {
@@ -127,6 +132,7 @@ input#input-password, input#input-email {
 .flex-senha {
     display: flex;
     padding: 0 30px;
+    min-width: 250px;
 }
 
 div.div-remember {
@@ -136,7 +142,6 @@ div.div-remember {
 }
 
 input[type=submit] {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
     display: block;
     background-color: #e1e1e1;
@@ -145,7 +150,7 @@ input[type=submit] {
     border: none;
     /* border: 1px solid rgba(0, 0, 0, 0.425); */
     height: 40px;
-    width: 130px;
+    width: 150px;
     letter-spacing: 2px;
     font-size: .7em;
     cursor: pointer;
