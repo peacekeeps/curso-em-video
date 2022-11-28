@@ -1,0 +1,20 @@
+div:before {  /* creates the red circle */
+    position: absolute;
+    content: '';
+    width: 90px;
+    height: 90px;
+    top: -50%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: red;
+    border-radius: 50%;
+  }
+  div {
+    position: relative;
+    margin: 100px auto 0 auto;
+    width: 90%;
+    height: 150px;
+    
+    /* only the below creates the transparent gap and the fill */
+    background: radial-gradient(50px 50px at 50% -30px, rgba(0, 0, 0, 0) 49.5px, rgba(0, 0, 0, .8) 50.5px);  /* use same center point as with concentric circles but larger radius */
+  }
